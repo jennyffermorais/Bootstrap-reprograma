@@ -1,0 +1,64 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+li {
+  color: black;
+}
+
+.btn {
+  background-color: rgb(167, 6, 126);
+  border: rgb(167, 6, 126);
+}
+
+#about a:hover {
+  background-color: blueviolet;
+}
+
+#portfolio a:hover {
+  background-color: blueviolet;
+}
+
+/* CAROUSEL PBI */
+#carousel-pbi .carousel-control-prev-icon {
+  background-image: url(../assets/prev.png);
+}
+
+#carousel-pbi .carousel-control-next-icon {
+  background-image: url(../assets/next.png);
+}
+
+#carousel-pbi .carousel-indicators li {
+  background-color: black;
+}
+
+#carousel-pbi .carousel-indicators .active {
+  background-color: rgb(167, 6, 126);
+}
+
+footer {
+  color: white;
+}
+
+/* condição até 960px */
+@media (max-width: 960px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* condição até 576px */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 17px;
+  }
+}
