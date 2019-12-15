@@ -22,11 +22,20 @@
       rel="stylesheet"
     />
 
-    <!-- <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-152608664-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-152608664-1");
+    </script>
   </head>
 
   <body>
@@ -48,11 +57,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <!-- <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(Página atual)</span></a
-            >
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#about">Sobre Mim</a>
           </li>
@@ -89,7 +93,6 @@
         </ul>
       </div>
     </nav>
-    <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
     <!-- INÍCIO DO CARROUSEL -->
     <div
@@ -150,7 +153,6 @@
         <span class="sr-only">Próximo</span>
       </a>
     </div>
-    <!-- FIM DO CARROUSEL -->
 
     <!-- CONTAINER ABOUT -->
     <div class="container" id="about">
@@ -200,7 +202,6 @@
         </div>
       </div>
     </div>
-    <!-- FIM DO ABOUT -->
 
     <!-- PORTFÓLIO FRONTEND -->
     <div class="container" id="portfolio">
@@ -211,81 +212,72 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-4">
-          <div class="card" style="max-width: 18rem;">
-            <img
-              class="card-img-top"
-              src="./src/assets/banner-01.jpg"
-              alt="Imagem de capa do card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Site Pessoal</h5>
-              <p class="card-text">
-                1º site feito por mim. Fiz esse site durante o Workshop da
-                {reprograma}. O Workshop teve como intuito ensinar HTML e CSS
-                para mulheres.
-              </p>
-              <a
-                href="https://jennyfferdemorais.netlify.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visitar</a
-              >
-            </div>
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./src/assets/banner-01.jpg"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Site Pessoal</h5>
+            <p class="card-text">
+              1º site feito por mim. Fiz esse site no Workshop da {reprograma},
+              que teve como intuito ensinar HTML e CSS para mulheres.
+            </p>
+            <a
+              href="https://jennyfferdemorais.netlify.com/"
+              class="btn btn-primary"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-md-4">
-          <div class="card" style="max-width: 18rem;">
-            <img
-              class="card-img-top"
-              src="./src/assets/banner-02.png"
-              alt="Imagem de capa do card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Site de Advogada</h5>
-              <p class="card-text">
-                2º site feito por mim. Fiz esse site para divulgar meus serviços
-                como Advogada Correspondente. Nesse projeto utilizei apenas HTML e
-                CSS.
-              </p>
-              <a
-                href="https://adv-correspondente-recife.netlify.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visitar</a
-              >
-            </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./src/assets/banner-03.jpg"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mundo Gelado</h5>
+            <p class="card-text">
+              Fiz esse site durante o curso de Front-End da {reprograma}, como
+              exercício da aula cujo tema era Responsividade.
+            </p>
+            <a
+              href="https://mundo-gelado-jennyffer.netlify.com/"
+              class="btn btn-primary"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-md-4">
-          <div class="card" style="max-width: 18rem;">
-            <img
-              class="card-img-top"
-              src="./src/assets/banner-03.jpg"
-              alt="Imagem de capa do card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Mundo Gelado</h5>
-              <p class="card-text">
-                3º site feito por mim. Fiz esse site durante o curso de
-                Front-End da {reprograma}, como exercício da aula cujo tema era
-                Responsividade.
-              </p>
-              <a
-                href="https://mundo-gelado-jennyffer.netlify.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visitar</a
-              >
-            </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./src/assets/banner-04.jpg"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Site de Advogada</h5>
+            <p class="card-text">
+              Fiz esse site para divulgar meus serviços como Advogada
+              Correspondente. Nesse site utilizei HTML, CSS e Bootstrap.
+            </p>
+
+            <a
+              href="https://adv-correspondente-recife.netlify.com/"
+              class="btn btn-primary"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <!-- FIM DO FRONTEND -->
 
     <!-- POWER BI -->
     <div class="container">
@@ -452,7 +444,6 @@
         </div>
       </div>
     </div>
-    <!-- FIM DO POWER BI -->
 
     <!-- INÍCIO DO FOOTER -->
     <footer>
@@ -460,7 +451,6 @@
         © Jennyffer Novaes de Morais - 2019
       </nav>
     </footer>
-    <!-- FIM DO FOOTER -->
 
     <!-- SCRIPTS -->
     <script

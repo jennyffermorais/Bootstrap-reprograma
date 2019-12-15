@@ -28,7 +28,7 @@ li {
   background-color: blueviolet;
 }
 
-/* CAROUSEL PBI */
+/* CARROUSEL PBI */
 #carousel-pbi .carousel-control-prev-icon {
   background-image: url(../assets/prev.png);
 }
@@ -49,10 +49,10 @@ footer {
   color: white;
 }
 
-/* condição até 960px */
-@media (max-width: 960px) {
-  .card {
-    margin-bottom: 20px;
+/* condição até 900px */
+@media (max-width: 900px) {
+  .card-deck {
+    font-size: 13px;
   }
 }
 
